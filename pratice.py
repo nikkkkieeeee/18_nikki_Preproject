@@ -8,17 +8,17 @@ print(datas)
 data = data.assign(year=datas[1])
 
 data.index = data['year']
-del data['year']
+
 print(data.index)
 
-set1 = data.head(11)
+set1 = data[(data['year'] >= str(1900)) & (data['year'] <= str(1910))]
 print(set1)
 
-set2 = data.iloc[11:21]
+set2 = data[(data['year'] >= str(1911)) & (data['year'] <= str(1920))]
 print(set2)
 
-set3 = data.tail(10)
-print(set3)
+set3 = data[(data['year'] >= str(1921)) & (data['year'] <= str(1930))]
+print(set2)
 
 set1sum = sum(set1['Calories'])
 print(round(set1sum))
