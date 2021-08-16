@@ -50,3 +50,5 @@ plt.xticks(index, ps.index, fontsize=15)
 plt.title("[1921 to 1930]", size=18)
 plt.show();
 
+set3.mean()
+
