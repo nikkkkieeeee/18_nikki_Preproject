@@ -52,7 +52,7 @@ plt.bar(ps.index, ps.values)
 plt.xlabel("Year", fontsize=10)
 plt.ylabel("No. of calories", fontsize=10)
 plt.xticks(index, ps.index, fontsize=10)
-plt.title("[1911 to 1920]", size=12)
+plt.title("[1911-1920]", size=12)
 plt.show();
 
 ps = set3['Calories'].sort_values()
@@ -61,6 +61,6 @@ plt.bar(ps.index, ps.values)
 plt.xlabel("Year", fontsize=10)
 plt.ylabel("No. of calories", fontsize=10)
 plt.xticks(index, ps.index, fontsize=10)
-plt.title("[1921 to 1930]", size=12)
+plt.title("[1921-1930]", size=12)
 plt.show();
 
