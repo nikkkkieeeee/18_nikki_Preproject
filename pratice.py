@@ -66,3 +66,26 @@ plt.show();
 
 set3.mean()
 
+class TestMarks:
+    def totalset1(num):
+        return sum(num)
+    def meanset1(num):
+        return sum(num) / len(num)
+
+    def totalset2(num):
+        return sum(num)
+    def meanset2(num):
+        return sum(num) / len(num)
+
+    def totalset3(num):
+        return sum(num)
+    def meanset3(num):
+        return sum(num) / len(num)
+
+print(round(TestMarks.totalset1(set1['Calories']), 1))
+print(round(TestMarks.totalset2(set2['Calories']), 1))
+print(round(TestMarks.totalset3(set3['Calories']), 1))
+
+print(round(TestMarks.meanset1(set1['Calories']), 1))
+print(round(TestMarks.meanset2(set2['Calories']), 1))
+print(round(TestMarks.meanset3(set3['Calories']), 1))
